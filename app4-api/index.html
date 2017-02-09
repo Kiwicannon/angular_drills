@@ -1,5 +1,17 @@
 <html ng-app="apiApp">
-	<body>
+	<body ng-controller="mainCtrl">
+		<!--{{test}}<br>
+		{{test1}}-->
+		<div ng-repeat="smurf in smurfs">
+			<img src="{{smurf.img}}" alt="">
+			<ul>
+				<li>{{smurf.created}}</li>
+				
+				<li>{{smurf.name}}</li>
+			</ul>
+		</div>
+		<div>
+		</div>
 		
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
