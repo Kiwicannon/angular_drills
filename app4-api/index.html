@@ -1,6 +1,14 @@
 <html ng-app="apiApp">
-	<body>
-		
+	<body ng-controller="mainCtrl">
+		<!--{{test}}<br>
+		{{test1}}		-->
+		<div ng-repeat="employee in employees">
+			<ul>
+				<li>{{employee.name}}</li>
+				<li>{{employee.id}}</li>
+				
+			</ul>
+			</div> 
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
