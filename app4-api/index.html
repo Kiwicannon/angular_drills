@@ -1,7 +1,14 @@
 <html ng-app="apiApp">
 	<body ng-controller="mainCtrl">
-		{{test}}<br>
-		{{test1}}
+		<!--{{test}}<br>
+		{{test1}}-->
+		<div ng-repeat="star in stars">
+			<ul>
+				<li>{{star.name}}</li>
+				<li>{{star.height}}</li>
+				<li>{{star.gender}}</li>
+			</ul>	
+				</div>
 		
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
