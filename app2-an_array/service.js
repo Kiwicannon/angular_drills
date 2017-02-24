@@ -102,7 +102,10 @@ var myData = [
 ];
 
 
-
+angular.module('arrayApp').service('mainSvc', function(){
+	this.test1 = 'service is working'
+	this.getData = myData
+})
 
 
 
